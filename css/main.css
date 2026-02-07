@@ -290,13 +290,15 @@ body {
     align-items: center;
   }
 }
+.section-head:has(.swiper-navs) .section-title {
+  width: calc(100% - 100px);
+}
 
 .section-title {
   font-size: 34px;
   font-weight: 500;
   margin: 0;
   flex-shrink: 0;
-  width: calc(100% - 100px);
 }
 @media (max-width: 767px) {
   .section-title {
@@ -862,6 +864,7 @@ html[dir=rtl] .swiper-btn i {
     height: 35px;
     font-size: 12px;
     padding-inline-start: 12px;
+    padding-inline-end: 90px;
   }
 }
 .newsletter-content .newsletter-btn {
@@ -1494,6 +1497,7 @@ html[dir=rtl] .footer-list a:hover {
   position: fixed;
   bottom: 20px;
   inset-inline-end: 20px;
+  display: none;
   z-index: 15;
 }
 @media (min-width: 1400px) {
