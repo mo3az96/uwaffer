@@ -24,7 +24,6 @@ $(document).ready(function () {
     },
     spaceBetween: 23,
     loop: true,
-    centeredSlides: true,
     navigation: {
       nextEl: ".main-slider .swiper-btn-next",
       prevEl: ".main-slider .swiper-btn-prev",
@@ -121,5 +120,48 @@ $(document).ready(function () {
 
   $(".toTop").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 400);
+  });
+  /************************************ Countdown ************************************/
+  const pad = (n) => String(n).padStart(2, "0");
+
+  $(".countdown-timer").each(function () {
+    const countdown = $(this);
+    const targetDate = new Date(countdown.data("countdown")).getTime();
+
+    const updateCountdown = () => {
+      const now = Date.now();
+      let distance = targetDate - now;
+
+      if (distance < 0) {
+        clearInterval(timer);
+        countdown.find(".countdown-number").text("00");
+        console.log("Countdown finished!");
+        return;
+      }
+
+      const timeParts = {
+        days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((distance / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((distance / (1000 * 60)) % 60),
+        seconds: Math.floor((distance / 1000) % 60),
+      };
+
+      for (const [unit, value] of Object.entries(timeParts)) {
+        countdown
+          .find(`.countdown-item.${unit} .countdown-number`)
+          .text(pad(value));
+      }
+    };
+
+    const timer = setInterval(updateCountdown, 1000);
+    updateCountdown();
+  });
+
+  /************************************ Black Firiday Articles ************************************/
+  let BFSwiper = new Swiper(".black_friday-articles-slider .swiper", {
+    a11y: {
+      enabled: false,
+    },
+    spaceBetween: 30,
   });
 });
