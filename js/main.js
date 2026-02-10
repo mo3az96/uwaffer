@@ -14,6 +14,10 @@ $(document).ready(function () {
     $("body").removeClass("overflow");
     $(".overlay").fadeOut();
   });
+   /************************************ Filter Icon ************************************/
+  $(".filter-icon").click(function () {
+    $(".store_archive-filters").toggleClass("active");
+  });
   /************************************ Main Slider ************************************/
   let mainSwiper = new Swiper(".main-slider .swiper", {
     a11y: {
@@ -163,5 +167,37 @@ $(document).ready(function () {
       enabled: false,
     },
     spaceBetween: 30,
+  });
+
+  /************************************ Range Slider ************************************/
+  $(function () {
+    const $min = $("#minRange");
+    const $max = $("#maxRange");
+    const $range = $(".range");
+
+    function update() {
+      let minVal = parseInt($min.val());
+      let maxVal = parseInt($max.val());
+
+      if (minVal > maxVal) {
+        [minVal, maxVal] = [maxVal, minVal];
+      }
+
+      $("#minVal").text(minVal);
+      $("#maxVal").text(maxVal);
+
+      const minPercent = (minVal / 100) * 100;
+      const maxPercent = (maxVal / 100) * 100;
+
+      $range.css({
+        left: minPercent + "%",
+        width: maxPercent - minPercent + "%",
+      });
+    }
+
+    $min.on("input", update);
+    $max.on("input", update);
+
+    update();
   });
 });

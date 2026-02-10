@@ -1,0 +1,549 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="A website that provides you with the latest coupons and active discount codes for various online stores, allowing you to purchase different products using exclusive coupons available daily."
+    />
+    <meta name="theme-color" content="#ea4f53" />
+    <meta name="msapplication-TileColor" content="#ea4f53" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <title>Uwaffer | NOON</title>
+    <link rel="shortcut icon" type="img/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body class="overflow">
+    <!-- Start Header -->
+    <header class="header-section">
+      <div class="top-hint">
+        <span class="hint-img">
+          <img src="images/header_hint.png" alt="noon" class="img-contain" />
+        </span>
+        <p class="hint-text">noon End of the Year Sale! Up to 20% Off</p>
+        <a href="store.html" class="hint-link">Shop Now</a>
+      </div>
+      <div class="container">
+        <div class="header">
+          <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Uwaffer" class="img-contain" />
+          </a>
+          <div class="search-form">
+            <div class="search-content">
+              <input
+                type="search"
+                placeholder="What are you looking for .."
+                class="search-input"
+              />
+              <button class="search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+          <a href="#!" class="lang-switch">
+            <span class="flag">
+              <img src="images/lang/ar.png" alt="ar" class="img-contain" />
+            </span>
+            <span class="text">AR</span>
+          </a>
+          <button class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <nav class="header-nav">
+        <div class="nav-head">
+          <a href="#!" class="lang-switch">
+            <span class="flag">
+              <img src="images/lang/ar.png" alt="ar" class="img-contain" />
+            </span>
+            <span class="text">AR</span>
+          </a>
+          <button class="menu-close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#!">All coupons</a>
+          </li>
+          <li>
+            <a href="store.html">Store</a>
+          </li>
+          <li>
+            <a href="#!">Categories</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb -->
+    <section class="breadcrumb-section">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#!">All Stores</a>
+          </li>
+          <li>noon</li>
+        </ul>
+      </div>
+    </section>
+    <!-- End Breadcrumb -->
+
+    <!-- Start Store Main -->
+    <section class="store_main-section">
+      <div class="container">
+        <div class="store_main-content">
+          <a href="#!" class="store_main-img">
+            <img
+              loading="lazy"
+              src="images/coupons/1.jpg"
+              alt="noon"
+              class="img-cover"
+            />
+          </a>
+          <div class="store_main-text">
+            <h3 class="store_main-title">
+              <a href="#!"> noon </a>
+            </h3>
+            <a href="#!" class="store_main-btn">Get the coupon</a>
+            <p class="store_main-desc">
+              While shopping online, many shoppers frequently wonder if Amazon
+              products are genuine, especially given the price variations and
+              the multitude of brands available on the platform.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Store Main -->
+
+    <!-- Start Store Archive -->
+    <section class="store_archive-section">
+      <div class="container">
+        <div class="store_archive-content">
+          <div class="store_archive-side">
+            <div class="store_archive-filters">
+              <span class="filter-icon">
+                <i class="far fa-filter"></i>
+              </span>
+              <div class="filters-head">
+                <h3 class="filters-title">Filters</h3>
+                <button class="filters-clear">Clear All</button>
+              </div>
+              <div class="filters-list">
+                <div class="fiter-item side-block">
+                  <label class="check-box">
+                    <input type="checkbox" />
+                    <span class="checkmark">
+                      <i class="fas fa-check"></i>
+                    </span>
+                    <span class="check-text">Free shipping</span>
+                  </label>
+                  <label class="check-box">
+                    <input type="checkbox" />
+                    <span class="checkmark">
+                      <i class="fas fa-check"></i>
+                    </span>
+                    <span class="check-text">Exclusive Deals</span>
+                  </label>
+                  <label class="check-box">
+                    <input type="checkbox" />
+                    <span class="checkmark">
+                      <i class="fas fa-check"></i>
+                    </span>
+                    <span class="check-text">Deals Only</span>
+                  </label>
+                </div>
+                <div class="fiter-item side-block">
+                  <div class="range-box">
+                    <h4 class="label">Off</h4>
+                    <div class="value">
+                      <span id="minVal">0</span>% - <span id="maxVal">80</span>%
+                    </div>
+
+                    <div class="slider-wrapper">
+                      <input
+                        type="range"
+                        id="minRange"
+                        min="0"
+                        max="100"
+                        value="0"
+                      />
+                      <input
+                        type="range"
+                        id="maxRange"
+                        min="0"
+                        max="100"
+                        value="80"
+                      />
+
+                      <div class="track"></div>
+                      <div class="range"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="extraInfo-item side-block">
+              <p class="item">
+                <span class="label"> Last update </span>
+                <span class="value"> 04/09/2025 </span>
+              </p>
+              <p class="item">
+                <span class="label"> Total Codes </span>
+                <span class="value"> 3 </span>
+              </p>
+              <p class="item">
+                <span class="label"> Best Discount </span>
+                <span class="value"> 20% </span>
+              </p>
+              <p class="item">
+                <span class="label"> A.V.G Saving </span>
+                <span class="value"> 180 SAR </span>
+              </p>
+            </div>
+            <div class="userInfo-item side-block">
+              <span class="user-icon">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="user-name"> Abdul-Rahman </span>
+              <p class="user-desc">
+                While shopping online, many shoppers frequently wonder if Amazon
+                products are genuine
+              </p>
+            </div>
+            <div class="related-items side-block">
+              <h3 class="related-title">Related Stores</h3>
+              <div class="stores-list">
+                <a href="store.html" class="store-item">
+                  <img
+                    loading="lazy"
+                    src="images/stores/1.jpg"
+                    class="img-cover"
+                    alt="store"
+                  />
+                </a>
+                <a href="store.html" class="store-item">
+                  <img
+                    loading="lazy"
+                    src="images/stores/2.jpg"
+                    class="img-cover"
+                    alt="store"
+                  />
+                </a>
+                <a href="store.html" class="store-item">
+                  <img
+                    loading="lazy"
+                    src="images/stores/3.jpg"
+                    class="img-cover"
+                    alt="store"
+                  />
+                </a>
+                <a href="store.html" class="store-item">
+                  <img
+                    loading="lazy"
+                    src="images/stores/4.jpg"
+                    class="img-cover"
+                    alt="store"
+                  />
+                </a>
+                <a href="store.html" class="store-item">
+                  <img
+                    loading="lazy"
+                    src="images/stores/5.jpg"
+                    class="img-cover"
+                    alt="store"
+                  />
+                </a>
+                <a href="store.html" class="store-item">
+                  <img
+                    loading="lazy"
+                    src="images/stores/6.jpg"
+                    class="img-cover"
+                    alt="store"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="store_archive-main">
+            <div class="store_archive-block">
+              <div class="store_archive-head">
+                <h3 class="store_archive-title">noon top Deals</h3>
+                <span class="store_archive-count">
+                  <i class="fas fa-circle-check"></i>
+                  250 User today
+                </span>
+              </div>
+              <div class="store_archive-list">
+                <div class="store_archive-item">
+                  <a href="#!" class="item-img">
+                    <img
+                      loading="lazy"
+                      src="images/coupons/1.jpg"
+                      alt="noon"
+                      class="img-cover"
+                    />
+                  </a>
+                  <div class="item-text">
+                    <h4 class="item-name">
+                      <a href="#!">Save 20% on your order</a>
+                    </h4>
+                    <ul class="item-features">
+                      <li>
+                        <i class="fas fa-check-circle"></i>
+                        11 User today
+                      </li>
+                      <li>
+                        <i class="fas fa-wallet"></i>
+                        Latest saving : 120 SAR
+                      </li>
+                    </ul>
+                    <div class="item-btns">
+                      <a href="#!" class="item-link"> Show more </a>
+                      <a href="#!" class="item-btn">Get the coupon</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="store_archive-item">
+                  <a href="#!" class="item-img">
+                    <img
+                      loading="lazy"
+                      src="images/coupons/1.jpg"
+                      alt="noon"
+                      class="img-cover"
+                    />
+                  </a>
+                  <div class="item-text">
+                    <h4 class="item-name">
+                      <a href="#!">Save 20% on your order</a>
+                    </h4>
+                    <ul class="item-features">
+                      <li>
+                        <i class="fas fa-check-circle"></i>
+                        11 User today
+                      </li>
+                      <li>
+                        <i class="fas fa-wallet"></i>
+                        Latest saving : 120 SAR
+                      </li>
+                    </ul>
+                    <div class="item-btns">
+                      <a href="#!" class="item-link"> Show more </a>
+                      <a href="#!" class="item-btn">Get the coupon</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="store_archive-item">
+                  <a href="#!" class="item-img">
+                    <img
+                      loading="lazy"
+                      src="images/coupons/1.jpg"
+                      alt="noon"
+                      class="img-cover"
+                    />
+                  </a>
+                  <div class="item-text">
+                    <h4 class="item-name">
+                      <a href="#!">Save 20% on your order</a>
+                    </h4>
+                    <ul class="item-features">
+                      <li>
+                        <i class="fas fa-check-circle"></i>
+                        11 User today
+                      </li>
+                      <li>
+                        <i class="fas fa-wallet"></i>
+                        Latest saving : 120 SAR
+                      </li>
+                    </ul>
+                    <div class="item-btns">
+                      <a href="#!" class="item-link"> Show more </a>
+                      <a href="#!" class="item-btn">Get the coupon</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="store_archive-desc">
+              <h3>Copy the Noon Discount Code (RKK11) Now</h3>
+              <p>
+                Enjoy fantastic discounts on your favorite products across
+                electronics, mobiles, home & kitchen, beauty & personal care,
+                fashion, and groceries. Get the best prices and save on every
+                purchase with exclusive offers designed to meet your daily
+                needs. Seize the opportunity today for a seamless and fast
+                online shopping experience that saves you time, effort, and
+                money. Start your perfect shopping journey with the Noon 2026
+                code, offering massive savings of up to 80% on fashion and pet
+                products, as well as home essentials and groceries. Customers in
+                Saudi Arabia, the UAE, and Egypt can easily activate this code
+                to enjoy exclusive deals that combine comfort, quality, and
+                great value.
+              </p>
+              <h3>What is the Noon 2026 Discount Code?</h3>
+              <p>
+                The Noon discount coupon is an exclusive code that gives you the
+                chance to receive great discounts when shopping through our
+                site. This coupon can be activated on most products in the Noon
+                store, including: Fashion & Beauty Baby Essentials & Stationery
+                Electronics & Appliances Furniture & Home Supplies Automotive
+                Parts The discount is available to customers in Saudi Arabia,
+                Kuwait, and Qatar, providing an easy and smooth saving
+                experience with every purchase.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Store Archive -->
+
+    <!-- Start Footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer">
+          <div class="row">
+            <div class="col-xl-5 col-lg-4 col-12">
+              <div class="footer-info">
+                <div class="footer-logo">
+                  <img
+                    loading="lazy"
+                    src="images/logo_footer.png"
+                    alt="Footer Logo"
+                    class="img-contain"
+                  />
+                </div>
+                <div class="socials">
+                  <a href="#!" target="_blank" class="social">
+                    <i class="fab fa-x-twitter"></i>
+                  </a>
+                  <a href="#!" target="_blank" class="social">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#!" target="_blank" class="social">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#!" target="_blank" class="social">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </div>
+                <div class="download">
+                  <div class="qr-content">
+                    <img
+                      loading="lazy"
+                      src="images/qr.jpg"
+                      alt="QR Code"
+                      class="img-cover"
+                    />
+                  </div>
+                  <div class="download-btns">
+                    <a href="#!" class="download-btn">
+                      <img
+                        loading="lazy"
+                        src="images/download/1.png"
+                        alt="Download"
+                        class="img-fluid"
+                      />
+                    </a>
+                    <a href="#!" class="download-btn">
+                      <img
+                        loading="lazy"
+                        src="images/download/2.png"
+                        alt="Download"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 col-lg-6 col-md-8 col-12">
+              <div class="footer-navs">
+                <div class="footer-nav">
+                  <h3 class="footer-title">Top stores</h3>
+                  <ul class="footer-list">
+                    <li>
+                      <a href="store.html">Amazon</a>
+                    </li>
+                    <li>
+                      <a href="store.html">noon</a>
+                    </li>
+                    <li>
+                      <a href="store.html">Aliexpress</a>
+                    </li>
+                    <li>
+                      <a href="store.html">Temu</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-nav">
+                  <h3 class="footer-title">Extra links</h3>
+                  <ul class="footer-list">
+                    <li>
+                      <a href="#!">Who we are</a>
+                    </li>
+                    <li>
+                      <a href="#!">Contact us</a>
+                    </li>
+                    <li>
+                      <a href="#!">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="#!">Terms & Conditions</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-12">
+              <div class="qr-content">
+                <img
+                  loading="lazy"
+                  src="images/qr.jpg"
+                  alt="QR Code"
+                  class="img-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="copyrights">All Right reserved Uwaffer 2026</p>
+    </footer>
+    <button class="toTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- Start Footer -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/svg.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
