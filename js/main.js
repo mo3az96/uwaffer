@@ -14,7 +14,7 @@ $(document).ready(function () {
     $("body").removeClass("overflow");
     $(".overlay").fadeOut();
   });
-   /************************************ Filter Icon ************************************/
+  /************************************ Filter Icon ************************************/
   $(".filter-icon").click(function () {
     $(".store_archive-filters").toggleClass("active");
   });
@@ -199,5 +199,42 @@ $(document).ready(function () {
     $max.on("input", update);
 
     update();
+  });
+
+  /************************************ Fancybox ************************************/
+  if (typeof Fancybox !== "undefined") {
+    Fancybox.bind("[data-fancybox]");
+  }
+  /************************************ Testimonials Slider ************************************/
+  let testimonialsSwiper = new Swiper(".testimonials_slider-content .swiper", {
+    a11y: {
+      enabled: false,
+    },
+    // loop: true,
+    autoplay: {
+      delay: 10000,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 24,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1199: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+    },
+    navigation: {
+      nextEl: ".testimonials_slider-content .swiper-btn-next",
+      prevEl: ".testimonials_slider-content .swiper-btn-prev",
+    },
   });
 });
