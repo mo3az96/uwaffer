@@ -237,4 +237,12 @@ $(document).ready(function () {
       prevEl: ".testimonials_slider-content .swiper-btn-prev",
     },
   });
+  /************************************ Coupon Modal ************************************/
+  $(".coupon_modal-descTrigger").click(function () {
+    $(this)
+      .toggleClass("active")
+      .parents(".coupon_modal")
+      .find(".coupon_modal-desc")
+      .slideToggle("500");
+  });
 });
