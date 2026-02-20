@@ -2294,6 +2294,11 @@ header {
   color: #1e1e1e;
   display: flex;
   align-items: center;
+  max-width: 185px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 .breadcrumb-section .breadcrumb-list li:not(:last-child)::after {
   content: "/";
@@ -2763,6 +2768,100 @@ html[dir=rtl] .footer-list a:hover {
   .lattest-articles-section {
     padding: 0 0 60px;
   }
+}
+
+.article-section {
+  padding: 0 0 80px;
+}
+@media (max-width: 767px) {
+  .article-section {
+    padding: 0 0 50px;
+  }
+}
+
+.article-content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.article-content .article-title {
+  text-align: center;
+  color: #1e1e1e;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.212;
+  margin: 0 0 40px;
+}
+@media (max-width: 767px) {
+  .article-content .article-title {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+}
+.article-content .article-img {
+  width: 100%;
+  aspect-ratio: 2/1;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.article-content .article-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .article-content .article-info {
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+}
+.article-content .info-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #1e1e1e;
+}
+.article-content .info-item i {
+  color: #eb4f53;
+}
+@media (max-width: 767px) {
+  .article-content .info-item {
+    font-size: 14px;
+  }
+}
+.article-content .article-desc {
+  text-align: center;
+}
+.article-content .article-desc h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 18px;
+}
+@media (max-width: 1199px) {
+  .article-content .article-desc h3 {
+    font-size: 16px;
+    margin-bottom: 9px;
+  }
+}
+.article-content .article-desc p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+@media (max-width: 1199px) {
+  .article-content .article-desc p {
+    font-size: 16px;
+  }
+}
+.article-content .article-desc :last-child {
+  margin: 0;
 }
 
 .store_main-section {
@@ -4212,8 +4311,6 @@ html[dir=rtl] .footer-list a:hover {
 }
 .category-item .item-icon:hover {
   border-color: #eb4f53;
-  background-color: #eb4f53;
-  color: #fff;
 }
 .category-item .item-name {
   font-size: 19px;
