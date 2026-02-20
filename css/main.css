@@ -4450,4 +4450,38 @@ html[dir=rtl] .form-control {
 .submit-btn:hover {
   color: #eb4f53;
   background-color: #fff;
+}
+
+.terms-section {
+  padding-bottom: 63px;
+}
+@media (max-width: 1199px) {
+  .terms-section {
+    padding-bottom: 40px;
+  }
+}
+
+.terms-content h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 18px;
+}
+@media (max-width: 1199px) {
+  .terms-content h3 {
+    font-size: 16px;
+    margin-bottom: 9px;
+  }
+}
+.terms-content p,
+.terms-content ul {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 50px;
+}
+@media (max-width: 1199px) {
+  .terms-content p,
+  .terms-content ul {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */
