@@ -2156,9 +2156,11 @@ header {
   color: #333333;
 }
 .lang-switch .flag {
-  width: 30px;
-  aspect-ratio: 4001/2666;
+  width: 35px;
+  aspect-ratio: 512/336;
   display: flex;
+  border-radius: 3px;
+  overflow: hidden;
   flex-shrink: 0;
 }
 .lang-switch .text {
@@ -2344,6 +2346,9 @@ footer {
   width: 100%;
   aspect-ratio: 415/128;
   margin: 0 0 20px;
+}
+.footer-logo img {
+  filter: brightness(0) invert(1);
 }
 @media (max-width: 991px) {
   .footer-logo {
